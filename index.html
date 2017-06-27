@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Technomart</title>
     <link href="img/favicon.png" type="image/png" rel="shortcut icon">
-    <link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -20,8 +20,8 @@
                     <b>Техномарт</b>
                 </div>
                 <form class="search-header" action="#" method="post">
-                    <input class="search" type="search" name="search" placeholder="Поиск:">
-                    <button class="btn-submit-search" type="submit"></button>
+                    <input id="search" type="search" name="search" placeholder="Поиск:" >
+                    <label for="search"></label>
                 </form>
             </div>
 
@@ -45,7 +45,7 @@
             <div class="midline-content">
                 <div class="midline-info">
                     <div class="description">
-                        <p>Интернет-магазин строительных материалов и инструментов для ремесла</p>
+                        <i>Интернет-магазин строительных материалов и инструментов для ремесла</i>
                     </div>
                 </div>
 
@@ -100,6 +100,7 @@
 <main>
     <div class="container clearfix">
         <div class="features">
+
             <div class="features-item features1">
                 <h3>Материалы</h3>
                 <div class="features-img"></div>
@@ -138,10 +139,14 @@
                             <div class="slide-description">
                                 <h3>Перфораторы</h3>
                                 <p>Настоящие мужские игрушки</p>
-                                <a class="btn btn-red" href="#">Открыть каталог</a>
                             </div>
+
+                            <div class="btn-slider">
+                            <a class="btn btn-red" href="#">Открыть каталог</a>
+                            </div>
+
                             <div class="slider-img">
-                                <img src="img/slide1.jpg" width="620" height="266" alt="Перфораторы">
+                                <img src="img/slide1.jpg" width="620" height="260" alt="Перфораторы">
                             </div>
                         </div>
 
@@ -205,6 +210,7 @@
                 <div class="item-box">
                     <img class="item-img" src="img/item4.jpg" width="184" height="164" alt="item1">
                     <h3 class="item-title">Перфоратор Bosch BFG 2000</h3>
+                    <strike></strike>
                     <div class="btn btn-red btn-prize">12 500 Р.</div>
                 </div>
             </div>
@@ -221,49 +227,65 @@
             <div class="company-list">
                 <div class="company-box">
                     <a class="company" href="#">
-                        <img src="img/company1.jpg" width="126" height="37" alt="company1">
+                        <div class="company-img">
+                            <img src="img/company1.jpg" width="126" height="37" alt="company1">
+                        </div>
                     </a>
                 </div>
 
                 <div class="company-box">
                     <a class="company" href="#">
-                        <img src="img/company2.jpg" width="123" height="40" alt="company2">
+                        <div class="company-img">
+                            <img src="img/company2.jpg" width="123" height="40" alt="company2">
+                        </div>
                     </a>
                 </div>
 
                 <div class="company-box">
                     <a class="company" href="#">
-                        <img src="img/company3.jpg" width="146" height="44" alt="company3">
+                        <div class="company-img">
+                            <img src="img/company3.jpg" width="146" height="44" alt="company3">
+                        </div>
                     </a>
                 </div>
 
                 <div class="company-box">
                     <a class="company" href="#">
-                        <img src="img/company4.jpg" width="200" height="88" alt="company4">
+                        <div class="company-img">
+                            <img src="img/company4.jpg" width="200" height="88" alt="company4">
+                        </div>
                     </a>
                 </div>
 
                 <div class="company-box">
                     <a class="company" href="#">
-                        <img src="img/company5.jpg" width="169" height="31" alt="company5">
+                        <div class="company-img">
+                            <img src="img/company5.jpg" width="169" height="31" alt="company5">
+                        </div>
                     </a>
                 </div>
 
                 <div class="company-box">
                     <a class="company" href="#">
-                        <img src="img/company6.jpg" width="121" height="73" alt="company6">
+                        <div class="company-img">
+                            <img src="img/company6.jpg" width="121" height="73" alt="company6">
+                        </div>
                     </a>
                 </div>
 
                 <div class="company-box">
                     <a class="company" href="#">
-                        <img src="img/company7.jpg" width="151" height="96" alt="company7">
+                        <div class="company-img">
+                            <img src="img/company7.jpg" width="151" height="96" alt="company7">
+                        </div>
                     </a>
                 </div>
 
                 <div class="company-box">
                     <a class="company" href="#">
-                        <img src="img/company8.jpg" width="204" height="69" alt="company8">
+                        <div class="company-img">
+                            <img src="img/company8.jpg" width="204" height="69" alt="company8">
+                        </div>
                     </a>
                 </div>
             </div>
@@ -301,10 +323,6 @@
                             Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж</p>
                     </div>
                 </div>
-                  <!-- <div class="service-img">
-                        <img src="img/auto.png" width="468" height="261" alt="доставка">
-                    </div>
-                </div>-->
 
                 <div class="service-description garantie-description">
                     <div class="garantie">
@@ -327,7 +345,7 @@
     </div>
 
     <div class="container">
-        <section class="technomart-info">
+        <section class="technomart-info clearfix">
             <div class="about">
                 <h2>Компания "Техномарт"</h2>
                 <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
@@ -339,83 +357,91 @@
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <a class="btb btb-red" href="#">Подробнее о компании</a>
+                <a class="btn btn-red" href="#">Подробнее о компании</a>
             </div>
 
             <div class="contact">
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис:</p>
                 <img class="map-mini" src="img/map.jpg" width="300" height="158" alt="карта">
-                <a class="btb btb-red" href="#">Заблудились? напишите нам!</a>
+                <a class="btn btn-red" href="#">Заблудились? напишите нам!</a>
             </div>
         </section>
     </div>
 
-    <div class="container">
-        <div class="downline-1">
-            <a class="technomart-link down">Техномарт</a>
-            <ul class="nav-down-1">
-                <li>
-                    <a href="#">Компания</a>
-                </li>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Каталог</a>
-                </li>
-                <li>
-                    <a href="#">Доставка</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
+
+    <div class="downline">
+        <div class="container clearfix">
+            <div class="downline-1">
+                <a class="emblema down-emblema" href="index.html">Техномарт</a>
+                <ul class="nav-down-1">
+                    <li>
+                        <a href="#">Компания</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="downline-2">
-            <div class="adres">
+        <div class="container clearfix">
+            <div class="downline-2">
+                <div class="adres">
                 <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     +7 (812) 555-05-55</span>
+                </div>
+                <ul class="nav-down-2">
+                    <li>
+                        <a href="#">Материалы</a>
+                    </li>
+                    <li>
+                        <a href="#">Техника</a>
+                    </li>
+                    <li>
+                        <a href="#">Инструмент</a>
+                    </li>
+                    <li>
+                        <a href="#">Спецпредложения</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-down-2">
-                <li>
-                    <a href="#">Материалы</a>
-                </li>
-                <li>
-                    <a href="#">Техника</a>
-                </li>
-                <li>
-                    <a href="#">Инструмент</a>
-                </li>
-                <li>
-                    <a href="#">Спецпредложения</a>
-                </li>
-            </ul>
         </div>
     </div>
 </main>
 <footer>
     <div class="container">
-        <div class="copyright">
-            <span>2010-2016 Компания "Техномарт"
+
+        <div class="footer-content clearfix">
+            <div class="copyright">
+            <span>&#169 2010-2016 Компания "Техномарт"
                 Все права защищены</span>
-        </div>
+            </div>
 
-        <div class="social">
-            <a class="social-link link-vk" href="#">VK</a>
-            <a class="social-link link-fb" href="#">fb</a>
-            <a class="social-link link-inst" href="#">insta</a>
-        </div>
+            <div class="social">
+                <a class="social-link link-vk" href="#">VK</a>
+                <a class="social-link link-fb" href="#">fb</a>
+                <a class="social-link link-inst" href="#">insta</a>
+            </div>
 
-        <div class="feedback">
-            <span>Обратная связь:</span>
-            <a href="#">mail@mailtechnomart.ru</a>
-        </div>
+            <div class="feedback">
+                <span>Обратная связь:</span>
+                <a href="#">mail@mailtechnomart.ru</a>
+            </div>
 
-        <div class="create">
-            <span>Разработано -</span>
-            <a href="#">EVGTKV</a>
+            <div class="create">
+                <span>Разработано -</span>
+                <a href="#">EVGTKV</a>
+            </div>
         </div>
     </div>
 </footer>

@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Technomart</title>
+    <link href="img/favicon.png" type="image/png" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
 <header>
-    <div class="container">
 
-        <div class="upperline">
+    <div class="upperline clearfix">
+        <div class="container">
             <div class="upperline-left">
                 <div class="emblema">
                     <a href="index.html" class="technomart-link up">Техномарт</a>
@@ -19,34 +25,48 @@
                 </form>
             </div>
 
-            <div class="upperline-right">
-                <div class="bookmark">
+            <div class="upperline-right-box">
+                <div class="upperline-right bookmark">
                     <a href="#">Закладки: <span>0</span></a>
                 </div>
-                <div class="cart">
+                <div class="upperline-right cart">
                     <a href="#">Корзина: <span>0</span></a>
                 </div>
-                <div class="order">
+                <div class="upperline-right order">
                     <a href="#">Оформить заказ:</a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="midline">
-            <div class="description">
-                <p>Интернет-магазин строительных материалов и инструментов для ремесла</p>
+    <div class="midline ">
+        <div class="container clearfix">
+
+            <div class="midline-content">
+                <div class="midline-info">
+                    <div class="description">
+                        <p>Интернет-магазин строительных материалов и инструментов для ремесла</p>
+                    </div>
+                </div>
+
+                <div class="midline-info">
+                    <div class="contact">
+                        <div class="tel"><span>+7 (812) 555-05-55</span></div>
+                        <p>г. Санкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
+                    </div>
+                </div>
+
+                <div class="midline-info">
+                    <div class="login">
+                        <a class="btn-login entrance" href="#">Войти</a>
+                        <a class="btn-login reg" href="#">Регистрация</a>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="contact">
-                <div class="tel"><span>+7 (812) 555-05-55</span></div>
-                <p>г. Санкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
-            </div>
 
-            <div class="login">
-                <a class="entrance" href="#">Войти</a>
-                <a class="reg" href="#">Регистрация</a>
-            </div>
-
+        <div class="container clearfix">
             <nav class="main-navigation">
                 <ul>
                     <li>
@@ -56,7 +76,7 @@
                         <a href="#">Компания</a>
                     </li>
                     <li>
-                        <span class="active">Каталог</span>
+                        <span>Каталог</span>
                     </li>
                     <li>
                         <a href="#">Новости</a>
@@ -73,6 +93,7 @@
                 </ul>
             </nav>
         </div>
+
     </div>
 </header>
 
@@ -301,72 +322,79 @@
             В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </div>
 
-    <div class="container">
-        <div class="downline-1">
-            <a href="index.html" class="technomart-link down">Техномарт</a>
-            <ul class="nav-down-1">
-                <li>
-                    <a href="#">Компания</a>
-                </li>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Каталог</a>
-                </li>
-                <li>
-                    <a href="#">Доставка</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
+    <div class="downline">
+        <div class="container clearfix">
+            <div class="downline-1">
+                <a class="emblema down-emblema" href="index.html">Техномарт</a>
+                <ul class="nav-down-1">
+                    <li>
+                        <a href="#">Компания</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="downline-2">
-            <div class="adres">
+        <div class="container clearfix">
+            <div class="downline-2">
+                <div class="adres">
                 <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     +7 (812) 555-05-55</span>
+                </div>
+                <ul class="nav-down-2">
+                    <li>
+                        <a href="#">Материалы</a>
+                    </li>
+                    <li>
+                        <a href="#">Техника</a>
+                    </li>
+                    <li>
+                        <a href="#">Инструмент</a>
+                    </li>
+                    <li>
+                        <a href="#">Спецпредложения</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-down-2">
-                <li>
-                    <a href="#">Материалы</a>
-                </li>
-                <li>
-                    <a href="#">Техника</a>
-                </li>
-                <li>
-                    <a href="#">Инструмент</a>
-                </li>
-                <li>
-                    <a href="#">Спецпредложения</a>
-                </li>
-            </ul>
         </div>
     </div>
-
+    </div>
 </main>
 <footer>
     <div class="container">
-        <div class="copyright">
-            <span>2010-2016 Компания "Техномарт"
+
+        <div class="footer-content clearfix">
+            <div class="copyright">
+            <span>&#169 2010-2016 Компания "Техномарт"
                 Все права защищены</span>
-        </div>
+            </div>
 
-        <div class="social">
-            <a class="social-link link-vk" href="#">VK</a>
-            <a class="social-link link-fb" href="#">fb</a>
-            <a class="social-link link-inst" href="#">insta</a>
-        </div>
+            <div class="social">
+                <a class="social-link link-vk" href="#">VK</a>
+                <a class="social-link link-fb" href="#">fb</a>
+                <a class="social-link link-inst" href="#">insta</a>
+            </div>
 
-        <div class="feedback">
-            <span>Обратная связь:</span>
-            <a href="#">mail@mailtechnomart.ru</a>
-        </div>
+            <div class="feedback">
+                <span>Обратная связь:</span>
+                <a href="#">mail@mailtechnomart.ru</a>
+            </div>
 
-        <div class="create">
-            <span>Разработано -</span>
-            <a href="#">EVGTKV</a>
+            <div class="create">
+                <span>Разработано -</span>
+                <a href="#">EVGTKV</a>
+            </div>
         </div>
     </div>
 </footer>
