@@ -192,6 +192,3 @@ if(bookmarkPP) {
     })
     };
 }
-
-
-var
