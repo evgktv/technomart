@@ -11,6 +11,21 @@
     20%, 40%, 60%, 80%          { transform: translateX(10px);  }
 }
 
+@keyframes anime-bookmark {
+        0%  {    transform: translateY(-100%);   }
+        15% {    transform: translateY(8%);      }
+        23% {    transform: translateY(-4%);     }
+        28% {    transform: translateY(4%);      }
+        32% {    transform: translateY(-2%);     }
+        33% {    transform: translateY(0%);      }
+        67% {    transform: translateY(-2%);     }
+        72% {    transform: translateY(4%);      }
+        78% {    transform: translateY(-4%);     }
+        87% {    transform: translateY(8%);      }
+        100% {    transform: translateY(-100%);   }
+
+}
+
 
 body {
     min-width: 960px;
@@ -2024,6 +2039,40 @@ footer {
     margin-bottom: 0px;
 }
 
+/*--------BOOKMARKS-ADD POPUP--------*/
+
+.popup-bookmark-add {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+
+    z-index: 60;
+}
+
+.bookmark-add {
+    width: 460p;
+
+    border-top: 7px solid #ee3643;
+    border-bottom: 14px solid #f1f1f1;
+    box-shadow: 0 20px 50px rgba(0, 1, 1, 0.5);
+    background: #ffffff;
+
+}
+
+.bookmark-add h2 {
+    padding: 15px;
+
+    font-family: "Cuprum", Arial, Helvitica, sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.popup-anime-bookmark {
+    animation: anime-bookmark 2.0s;
+}
 
 /*--------OVERLAY $$ CLOSE POPUP-------*/
 

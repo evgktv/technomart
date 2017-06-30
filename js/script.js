@@ -42,9 +42,8 @@ form.addEventListener("submit", function(event) {
         if (remember.checked) {
             localStorage.setItem("login", login.value);
        }
-       }
-   });
-
+        }
+});
 
 close_loginPP.addEventListener("click", function(event) {
     event.preventDefault();
@@ -118,6 +117,7 @@ window.addEventListener("keydown", function(event) {
 });
 }
 }
+
 /*---------MAP PP---------*/
 var map = document.querySelector(".map-mini");
 var mapPP = document.querySelector(".popup-map");
@@ -146,6 +146,7 @@ window.addEventListener("keydown", function(event) {
         }
 });
 }
+
 /*---------ORDER PP--------*/
 
 var order = document.querySelectorAll(".btn-buy"), i;
@@ -170,3 +171,27 @@ close_orderPP.addEventListener("click", function(event) {
     orderPP.classList.remove("popup-anime");
 });
 }
+
+
+/*----------BOOKMARS ADD PP--------*/
+
+var bookmark = document.querySelectorAll(".btn-bookmark"), q;
+var bookmarkPP = document.querySelector(".popup-bookmark-add");
+
+if(bookmarkPP) {
+    var close_bookmarkPP = bookmarkPP.querySelector(".close-popup");
+    for (q = 0; q < bookmark.length; ++q) {
+        bookmark[q].addEventListener("click", function(event) {
+        event.preventDefault();
+        bookmarkPP.classList.add("show-popup");
+        bookmarkPP.classList.add("popup-anime-bookmark");
+        setTimeout(function() {
+                               bookmarkPP.classList.remove("show-popup");
+                               bookmarkPP.classList.remove("popup-anime-bookmark");
+                               }, 2000);
+    })
+    };
+}
+
+
+var
